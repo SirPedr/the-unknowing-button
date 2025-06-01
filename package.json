@@ -9,7 +9,8 @@
 		"lint": "eslint .",
 		"preview": "pnpm run build && vite preview",
 		"deploy": "pnpm run build && wrangler deploy",
-		"cf-typegen": "wrangler types"
+		"cf-typegen": "wrangler types",
+		"test": "vitest"
 	},
 	"dependencies": {
 		"@tanstack/react-query": "^5.79.0",
