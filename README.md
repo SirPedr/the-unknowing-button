@@ -1,54 +1,56 @@
-# React + TypeScript + Vite
+# The Button of Unknowing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A whimsical web experiment where clicking a button leads to delightfully surreal and unexpected consequences. Built with React and TypeScript, deployed on Cloudflare Workers.
 
-Currently, two official plugins are available:
+## 🎯 What is this?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Click the button... if you dare! Each click triggers a randomly selected surreal event. Will the universe implode? Will your socks turn into philosophical salamanders? Only the button knows.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+React 19
+TypeScript
+Vite
+TanStack Query
+Cloudflare Workers
+Testing: Vitest + React Testing Library
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🚀 Getting Started
+
+Install dependencies:
+
+```cmd
+pnpm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Run development server:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```cmd
+pnpm dev
 ```
+
+Build:
+
+```cmd
+pnpm build
+```
+
+Deploy to Cloudflare:
+
+```cmd
+pnpm deploy
+```
+
+## 🧪 Testing
+
+Run the test suite with `pnpm test`
+
+## 🤝 Contributing
+
+Feel free to contribute more surreal consequences! Just make sure they're family-friendly and properly weird.
+
+## 📝 License
+
+Just like the consequences of pressing the button, this project's future is uncertain. Use at your own existential risk. Also, see LICENSE.md
+
+Note: Side effects may include questioning reality, spontaneous tap dancing, and temporary conversion of all punctuation marks into tiny ducks.
