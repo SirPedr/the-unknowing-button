@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  --diameter: 2px;
+
+  background: radial-gradient(
+      circle at var(--diameter) var(--diameter),
+      #d7d7d7 calc(var(--diameter) - 1px),
+      #0000 var(--diameter)
+    )
+    0 0 / 50px 50px;
+
+  font-family: "Inter", sans-serif;
+}
+
+.app {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.app__title {
+  font-family: "Aladin", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  position: relative;
+  margin: 0;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    width: 70%;
+    height: 48px;
+    background-color: #ffef00;
+    z-index: -10;
+  }
+}
+
+.app__subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 8px 0 20px 0;
+  letter-spacing: 1px;
+  color: #8a8a8a;
+}
+
+.app__button {
+  color: white;
+  background: #ff0264;
+  border: 1px solid black;
+  font-family: "Aladin", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 8px 8px 0px -3px black;
+  transition: box-shadow 200ms;
+  cursor: pointer;
+
+  &:active {
+    box-shadow: 0px 0px 0px 0px black;
+  }
+}
+
+.app__message {
+  text-align: center;
+  margin-top: 40px;
+  background: #0079ff;
+  padding: 20px;
+  border: 2px solid black;
+  color: white;
+}
+
+.app__message--error {
+  background: #9100ff;
+  margin: 0;
+}
+
+.app__footer {
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 8px;
+  background: #ff0264;
+  position: fixed;
+  bottom: 0;
+}
+
+.app__link {
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .app__button {
+    width: 320px;
+  }
+
+  .app__message {
+    width: 50%;
+  }
+}
